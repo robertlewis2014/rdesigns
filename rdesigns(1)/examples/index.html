@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<link rel="icon" 
+      type="image/png" 
+      href="http://example.com/myicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>RDESGISN | Robert Lewis</title>
+	<meta name="author" content="Robert M. Lewis" />
+	<meta name="description" content="Robert Design, offering graphic design solutions in the Atlanta, Georgia area. " />
+	<meta name="keywords"  content="graphic design,logo design,atlanta designer,stationery,Robert Lewis,Robert Design, RDESIGNS,web design" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<style>
+/* Style for our header texts 
+	* --------------------------------------- */
+	h1 {
+	font-size: 5em;
+	font-family: arial, helvetica;
+	color: #fff;
+	margin:0;
+}
+.intro p {
+	color: #303030;
+	font-size:14px;
+}
+/* Centered texts in each section 
+	* --------------------------------------- */
+	.section {
+	text-align:center;
+	padding:85px;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+span{
+	color: #663694;
+	font-weight: bold;
+}
+
+
+
+/* PORTFOLIO SECTION */
+
+@import "compass/css3";
+
+@import "compass/css3";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+@mixin bp($point) {
+  @if $point == mid {
+    @media (max-width: 728px) { @content; }
+  }
+}
+
+
+/*Variables*/
+$orange: rgb(242,125,0);
+$grey: rgb(135,135,133);
+$facebook: #3b5998;
+$twitter: #00acee;
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.filters {
+  margin: 24px;
+  a {
+    padding-right:15px;
+    color: $grey;
+    &:hover, &.active-filter {
+      color:#fff;
+      }
+  }
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
+}
+
+article {
+  display: inline;
+  float: left;
+  width: 300px;
+  padding: 0;
+  margin: 0 10px 20px;
+}
+
+
+article a {
+  display: block;
+  padding: 0 20px;
+  height: 260px;
+  background: #fff;
+  overflow: hidden;
+  color: $orange;
+  text-decoration: none;
+  &:hover img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0.8;
+  }
+}
+
+article img {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: auto; 
+  margin: 0 -20px 20px;
+
+}
+
+article i {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  display: block;
+  margin: 0 0 5px;
+}
+
+ article b {
+font-weight: normal;
+font: 18px/22px "AvantGardeGothicITCW01M 731087",Arial,Helvetica,sans-serif;
+color: #121212;
+}
+
+article.current {
+margin-bottom: 0;
+border-bottom: 20px solid #fff;
+}
+
+article div { 
+display: none;
+}
+
+.content {
+clear: both;
+background: #fff;
+padding: 0 20px;
+margin: 0 10px 0;
+position: relative;
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+-webkit-transition: all 1s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 1s ease;
+} 
+
+.content.open {
+max-height: 1000px;
+padding: 20px;
+margin: 0 10px 20px;
+opacity: 1;
+}
+
+
+.content a {
+float: right; 
+font-size: 13px;
+line-height: 17px;
+}
+
+.content i {
+font-style: normal;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 11px;
+color: $orange;
+}
+
+.content img, .content video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px;
+}
+ 
+.content b {
+font-weight: normal;
+font: 30px/34px "AvantGardeGothicITCW01B 731063",Arial,Helvetica,sans-serif;
+color: #121212;
+margin: 18px 0;
+  display: block; 
+}
+
+.details {
+  width:100%;
+  .bio {
+    width:61.8%;
+    float: left;
+    padding-right: 20px;
+    @include bp(mid) {
+     width: 100%; 
+    }
+  }
+  .social {
+    width: 38.2%;
+    @include bp(mid) {
+     width: 100%; 
+    }
+    float: left;
+    margin: 1em 0;
+    b {
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px 0 0;
+      li {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+        a {
+          position: relative;
+          background: #efefef;
+          float: none;
+          text-align: left;
+          display: block;
+          padding: 10px 0 10px 70px;
+          font-size: 1em;
+          text-transform: uppercase;
+          
+          &.facebook {
+            border-left: 5px solid $facebook;
+            &:before {color:$facebook;}
+          }
+          &.twitter {
+            border-left: 5px solid $twitter;
+            &:before {color:$twitter;}
+          }
+          &.web {
+            border-left: 5px solid $orange;
+          }
+          -webkit-transition:all 0.2s linear;
+      		-moz-transition:all 0.2s linear;
+      		-o-transition:all 0.2s linear;
+      		transition:all 0.2s linear;		
+          &:hover {
+            background: #ccc;
+            color: #686868;
+          }
+          &:before {
+            position: absolute;
+            left: 25px;
+            font-size: 1.5em;
+          }
+        }        
+      }
+    }
+    }
+}
+
+.content p {
+font-size: 13px;
+line-height: 17px;
+}
+
+.bigbox {
+  width:100%;
+  padding:20px;
+  overflow:hidden;
+}
+
+
+
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				slidesColor: ['#CCC', '#CCC', '#CCC', '#CCC'],
+				autoScrolling: false
+			});
+		});
+	</script>
+	</head>
+	<body>
+<ul id="menu">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">PORTFOLIO</a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage">CONTACT</a></li>
+      <li data-menuanchor="resume"><a href="resume.pdf">RESUME</a></li>
+    </ul>
+<div id="fullpage">
+      <div class="section " id="section0">
+    <div class="intro">
+          <div id="me">
+          <img src="imgs/intro.png"  alt="1" />
+         </div>
+       
+        </div>
+  </div>
+      <div class="section" id="section2">
+    <div class="intro"> 
+    
+   <img src="imgs/hello.png" alt="contact" id="contact" />
+          <br>
+          <div id="hello">
+        <p>My name is <span>Robert Lewis</span> and I am a <span>designer who can help convey your message</span>. As of December 2012, I obtained my <span>Bachelor of Fine Arts In Graphic Design</span> from the <span>Art Institute of Atlanta–Decatur</span>. Graphic Design is <span>NOT</span> something i woke up the next day and chose to pursue. Growing up I always felt that <span>DESIGN</span> and it's <span>PRESENTATION</span> are the <span>MAIN FACTORS</span> in <span>converying a message</span>.</p>
+        <br>
+        <p>Currently I'm back in school working on my Web Design degree. As I applied to school again, I felt like knowing HTML and CSS is a must in this growing indsutry. My design style is very <span>simple</span> and <span>clean</span>, yet <span>EFFECTIVE</span>. I do not limit myself to just one style because my mission is bringing a clients vision to life. The programs I am <span>proficient</span> in are <span>Adobe Photoshop, Illustrator, and InDesign.</span></p>
+        <br>
+        <p>I AM ALWAYS READY TO WORK.</p>
+      </div>
+          <!--end of hello div-->
+          
+          <div id="hello_1"><img src="imgs/about1.png" alt="about" /></div>
+        </div>
+    <!--end of intro div--> 
+  </div>
+      <!--end of section-->
+      
+      <div class="section" id="section3">
+    <div class="slide" id="slide1">
+          <div class="intro"> <a href="#slide1"><img src="imgs/portfolio.png" alt="portfolio_text" id="portfolio_text" /></a>
+        
+      </div>
+      
+      
+      <div class="bigBox">
+<div class="filters">
+  <a href="#" class="active-filter" data-filter="all">ALL</a>
+  <a href="#" data-filter="sydney">SYDNEY</a>
+  <a href="#" data-filter="melbourne">MELBOURNE</a>
+</div>
+<div class="container">	
+
+<article class="sydney">
+			<a href="#" data-cat="news" data-state="vic">  
+          <img src="http://acmndev.com.au/codepen/images/2.jpg"> 
+            <i>3rd July, 2013</i><b>Marion Grasby</b></a>
+			<div>
+        <img src="http://acmndev.com.au/codepen/images/2.jpg"></img>
+				<a href="www.marionskitchen.com.au
+" target="_blank">marionskitchen.com.au
+</a>
+				<i>3rd July, 2012</i>
+				<b>Marion Grasby</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>Marion Grasby started life in the tropical city of Darwin, where the papaya salads are spicy and the mangoes are sweet and sticky. Marion is a little bit Thai (courtesy of her Mum) and a little bit Australian (courtesy of her Dad). Her love of food and travel became ingrained at an early age as her globetrotting parents lived and travelled in Papua New Guinea, Thailand and Australia.</p>
+    				<p>Marion is a passionate cook, writer, presenter and creator of the Marion's Kitchen Asian food range. Her cookbook, Marion: Recipes and Stories from a Hungry Cook, was released in 2011 and she has a monthly food column in Masterchef Magazine.</p>
+				  </div>
+				  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@marionskitchen</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">marionskitchen.com.au</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+		<article class="sydney melbourne">
+			<a href="#" data-cat="columns" data-state="nat"><img src="http://acmndev.com.au/codepen/images/1.jpg"><i>3rd, 10th & 11th July, 2013</i><b>Justin North</b></a>
+			<div>
+				<img src="http://acmndev.com.au/codepen/images/1.jpg">
+				<a href="http://www.becasse.com.au" target="_blank">becasse.com.au</a>
+				<i>3rd, 10th & 11th July, 2013</i>
+				<b>Justin North</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>Restaurateur Justin North is one of Sydney's most widely recognised chefs - his philosophical approach to sustainability and ethical eating has seen him be described as a visionary within the industry. The contemporary flavours and sophisticated style of his food has resulted in many awards: Becasse was named runner-up for the 2009 Sydney Morning Herald Restaurant of the year award while Justin was awarded the title of '2009 Chef of the Year'. In 2011 Becasse received two hats in the 2012 SMH Good Food Guide, three stars from Gourmet Traveller and was the 2011 Restaurant and Catering Restaurant of the year. Also, in 2011 Justin and Georgia were presented with the inaugural Le Cordon Bleu Award for Professional Excellence at the Sydney Morning Herald Good Food Guide Award Ceremony.</p>
+    				<p>Justin is the author of two award winning books Becasse: Inspirations and Flavours and the recently published French Lessons.</p>
+				  </div>
+    		  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@JustinNorth</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">becasse.com.au</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+		<article class="melbourne">
+			<a href="#" data-cat="features" data-state="vic"><img src="http://acmndev.com.au/codepen/images/3.jpg"><i>19th & 22nd July (Dinner), 2013</i><b>Dani Venn</b></a>
+			<div>
+				<img src="http://acmndev.com.au/codepen/images/3.jpg">
+				<a href="http://www.danivenn.com" target="_blank">danivenn.com
+</a>
+				<i>19th & 22nd July (Dinner), 2013</i>
+				<b>Dani Venn</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>MasterChef audience favourite Dani Venn made a big splash on our screens in 2011. The MasterChef judges and audience alike were impressed with her knowledge of Asian flavours, skill in the kitchen and her enthusiastic and relentless energy. Dani always wore her heart on her plate and was always happy, whether laughing or crying. "Dani has such an infectious personality. Her laugh lit up the MasterChef kitchen"- Matt Preston. Since leaving the competition, Dani has been developing her food blog www.danivenn.com, and expanding her career aspirations and media opportunities. She performs cooking demonstrations all over Australia and makes regular appearances on the Nova 100 Breakfast show in Melbourne with Kate Langbroek and Dave Hughes. Dani also has television and book projects in development.</p>
+    		</div>
+				  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@DaniVenn</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">danivenn.com</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+
+		<article class="sydney melbourne">
+			<a href="#" data-cat="news" data-state="nat"><img src="http://acmndev.com.au/codepen/images/4.jpg"><i>5th July, 2013</i><b>Julie Goodwin</b></a>
+			<div>
+				<img src="http://acmndev.com.au/codepen/images/4.jpg">
+				<a href="http://www.juliegoodwin.com.au" target="_blank">juliegoodwin.com.au
+</a>
+				<i>5th July, 2013</i>
+				<b>Julie Goodwin</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>Julie Goodwin is the winner of the first Australian Masterchef crown. In 2009 Network Ten's Masterchef Series took Australian television by storm. In a finale watched by almost 4 million Australians, Julie Goodwin took out the title of Australia's first ever 'MasterChef and the life of the dedicated wife and mother of 3 changed forever.</p>
+
+    				<p>Julie's first book 'Our Family Table' published with Random House in 2010, stayed at No.1 Bestseller for over 10 weeks, having sold over 200,000 copies to date, it is one of Australia's largest selling cook books ever. Julie's second book, 'Heart of the Home', was released for Christmas 2011, with a third book due for release in 2013.</p>
+    				<p>Julie has maintained a high media profile as a regular columnist for the Australian's Women's Weekly and resident cook on the Today Show for Ch9. and an audience favourite guest on Ten's Can Of Worms.</p>
+    						  </div>
+				  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@JulieGoodwin</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">juliegoodwin.com.au</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+		<article class="sydney">
+			<a href="#" data-cat="features" data-state="nat"><img src="http://acmndev.com.au/codepen/images/5.jpg"><i>6th, 18th & 21st July, 2013</i><b>Justine Schofield</b></a>
+			<div>
+				<img src="http://acmndev.com.au/codepen/images/5.jpg">
+				<a href="http://www.justineschofield.com.au" target="_blank">justineschofield.com.au</a>
+				<i>6th, 18th & 21st July, 2013</i>
+				<b>Justine Schofield</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>A favourite finalist on MasterChef Series 1, Justine is a down to earth, half French and half Australian gourmet cook. Growing up with her mother owning a French restaurant, Justine Schofield is naturally passionate about French cuisine. Often referred to as a young 'Rachel Rae', Justine now hosts her own TV show, 'Everyday Gourment' on Ch10, has appeared at Good Food Shows nationally, and is in high demand catering and appearing at corporate events.</p>
+    								  </div>
+				  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@JustineSchofield</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">justineschofield.com.au</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+		<article class="sydney">
+			<a href="#" data-cat="features" data-state="nat"><img src="http://acmndev.com.au/codepen/images/6.jpg"><i>12th & 13th July, 2013</i><b>Colin Fassnidge</b></a>
+			<div>
+				<img src="http://acmndev.com.au/codepen/images/6.jpg">
+				<a href="http://fourinhand.com.au" target="_blank">fourinhand.com.au</a>
+				<i>12th & 13th July, 2013</i>
+				<b>Colin Fassnidge</b>
+				<div class="details">
+				  <div class="bio">
+    				<p>Dublin born Colin Fassnidge has been the Head Chef of the Four in Hand since October 2005. During Colin's time at the Four in Hand, The Dining Room has been exalted through reviews. Awards include the Good Food Guide One Chefs Hat and adding the prestigious Second Hat in 2010. The Dining Room has always been in The Gourmet Travellers Top 100. Colin is also behind the Paddington Arms and 4Fourteen in Surry Hills. Colin was a popular contributing Chef on the Masterchef Series - introducing Australian's to the culinary delights of pig's tail and winning out against Contestant Jay Huxley in a great Steak & Kidney Pie Challenge.</p>
+    		  </div>
+				  <div class="social">
+				    <b>Connect:</b>
+				   <ul>
+				    <li>
+  				    <a class="facebook entypo-facebook" href="#">Facebook</a>
+				    </li>
+				    <li>
+  				    <a class="twitter entypo-twitter" href="#">@ColinFassnidge</a>
+				    </li>
+				    <li>
+  				    <a class="web entypo-link" href="#">fourinhand.com.au</a>
+				    </li>
+				   </ul>
+				  </div>
+				</div>
+			</div>
+		</article>
+    <div class="content"></div>
+</div>
+</div> <!--end Big box -->
+      
+      
+        </div>
+    <div class="slide" id="slide2"> <a href="#slide1"><img src="imgs/web.png" alt="web" class="web" /></a>
+      
+      <br>
+          <br>
+          <a href="http://robertlewis.aisites.com/lewis_assignment5/index.html" target="_blank"><img src="imgs/js.png" width="1064" height="417" /></a>
+          <br>
+          <br>
+    
+        </div>
+    <div class="slide" id="slide3"> <a href="#slide1"><img src="imgs/graphic.png" alt="iphone" class="web" /></a>
+   
+       <br>
+          <br>
+          <img src="imgs/cans.png" width="1064" height="417" />
+          <br>
+          <br>
+          
+        </div>
+    
+  </div>
+      <div class="section" id="section4">
+    <div class="intro"> <img src="imgs/contact.png" alt="contact" id="contact" />
+          <!--form div-->
+        </div>
+  </div>
+    </div>
+</body>
+
+
+
+
+
+
+</html>

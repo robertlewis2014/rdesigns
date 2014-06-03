@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link rel="icon" 
+      type="image/png" 
+      href="http://example.com/myicon.png">
+      
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>RDESGISN | Robert Lewis</title>
+	<meta name="author" content="Robert M. Lewis" />
+	<meta name="description" content="Robert Design, offering graphic design solutions in the Atlanta, Georgia area. " />
+	<meta name="keywords"  content="graphic design,logo design,atlanta designer,stationery,Robert Lewis,Robert Design, RDESIGNS,web design" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+	
+	/* Style for our header texts 
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;	
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+	
+	/* Centered texts in each section 
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+
+	<script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				slidesColor: ['#CCC', '#CCC', '#CCC', '#CCC'],
+				autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">PORTFOLIO</a></li>
+    <li data-menuanchor="4thPage"><a href="#4thPage">CONTACT</a></li>
+    <li data-menuanchor="payment"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=O3nAvHrbu0QMzGVwR1-PLGF3NWLceO7RnZDLFSdrR5_cKTE2rlKiClJ_Zsu&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b081981b5bc1bed9bcd4a664bb0e309d0a9e4f" target="_blank">PAYMENT</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<img src="imgs/rd_logo.png"  alt="1"/>
+			<h1>Robert Lewis</h1>
+			<p>Graphic & Web Designer</p>
+		</div>
+	</div>
+    
+    
+    <div class="section" id="section2">
+		<div class="intro">
+			<img src="imgs/hello.png"  alt="1"/>
+			<p>My name is Robert Lewis and I'm a designer who can help convey your message. As of December 2012, I obtained my Bachelor of Fine Arts In Graphic Design from the Art Institute of Atlanta–Decatur. Graphic Design is NOT something i woke up the next day and chose to pursue. Growing up I always felt that DESIGN and it's PRESENTATION are the MAIN FACTORS in converying a message.</p>
+            <br>
+            <br>
+            
+            <p>Currently I'm back in school working on my Web Design degree. As I applied to school again, I felt like knowing HTML and CSS is a must in this growing indsutry. My design style is very simple and clean, yet EFFECTIVE. I do not limit myself to just one style because my mission is bringing a clients vision to life. The programs I am proficient in are Adobe Photoshop, Illustrator, and InDesign.</p>
+            <br>
+            <br>
+            <h2>I AM ALWAYS READY TO WORK.</h2>
+		</div>
+	</div>
+    
+    
+	<div class="section" id="section3">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+            <a href="#slide1"><img src="imgs/portfolio.png" alt="iphone" id="iphone-two" /></a>
+				<p><a href="#slide2">Project 1</a></li>
+                <a href="#slide3">Project 2</a></li>
+                <a href="#slide4">Project 3</a></li></p>
+                <br>
+            <br>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+		
+	    <div class="slide" id="slide2">		
+          
+			 <a href="#slide1"><img src="imgs/web.png" alt="web" class="web" /></a>
+             <h1>Project 1</h1>
+             <br>
+            <br>
+             <p><a href="#slide2">Project 1</a></li>
+                <a href="#slide3">Project 2</a></li>
+                <a href="#slide4">Project 3</a></li></p>
+		</div>
+        
+        <div class="slide" id="slide3">		
+           
+			 <a href="#slide1"><img src="imgs/web.png" alt="iphone" class="web" /></a>
+            <h1>Project 2</h1>
+            <br>
+            <br>
+            <p><a href="#slide2">Project 1</a></li>
+                <a href="#slide3">Project 2</a></li>
+                <a href="#slide4">Project 3</a></li></p>
+		</div>
+        
+        <div class="slide" id="slide4">		
+           
+			 <a href="#slide1"><img src="imgs/graphic.png" alt="graphic" class="graphic" /></a>
+            <h1>Project 3</h1>
+            <br>
+            <br>
+            <p><a href="#slide2">Project 1</a></li>
+                <a href="#slide3">Project 2</a></li>
+                <a href="#slide4">Project 3</a></li></p>
+		</div>
+
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<img src="imgs/contact.png" alt="contact" id="contact" />
+            <h1>Just use </h1>
+			<p>autoScrolling:false</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
